@@ -705,6 +705,7 @@ export interface LabelKeySearchOptions {
   first?: null | number
   omit?: null | string[]
   search?: null | string
+  targetType?: null | string
 }
 
 export interface LabelSearchOptions {
@@ -721,6 +722,7 @@ export interface LabelValueSearchOptions {
   key: string
   omit?: null | string[]
   search?: null | string
+  targetType?: null | string
 }
 
 export interface LinkAccountInfo {

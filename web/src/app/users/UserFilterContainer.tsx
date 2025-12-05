@@ -82,6 +82,7 @@ export default function UserFilterContainer(
           name='label-key'
           label='Select Label Key'
           value={labelKey}
+          targetType='user'
           onChange={(labelKey: string) =>
             props.onChange({ ...props.value, labelKey })
           }
@@ -92,6 +93,7 @@ export default function UserFilterContainer(
           name='label-value'
           label='Select Label Value'
           labelKey={labelKey}
+          targetType='user'
           value={labelValue}
           onChange={(v: string) =>
             props.onChange({ ...props.value, labelValue: v || '' })

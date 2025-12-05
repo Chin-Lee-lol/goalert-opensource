@@ -28611,7 +28611,7 @@ func (ec *executionContext) unmarshalInputLabelKeySearchOptions(ctx context.Cont
 		asMap["search"] = ""
 	}
 
-	fieldsInOrder := [...]string{"first", "after", "search", "omit"}
+	fieldsInOrder := [...]string{"first", "after", "search", "omit", "targetType"}
 	for _, k := range fieldsInOrder {
 		v, ok := asMap[k]
 		if !ok {
@@ -28646,6 +28646,13 @@ func (ec *executionContext) unmarshalInputLabelKeySearchOptions(ctx context.Cont
 				return it, err
 			}
 			it.Omit = data
+		case "targetType":
+			ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("targetType"))
+			data, err := ec.unmarshalOString2ᚖstring(ctx, v)
+			if err != nil {
+				return it, err
+			}
+			it.TargetType = data
 		}
 	}
 
@@ -28737,7 +28744,7 @@ func (ec *executionContext) unmarshalInputLabelValueSearchOptions(ctx context.Co
 		asMap["search"] = ""
 	}
 
-	fieldsInOrder := [...]string{"key", "first", "after", "search", "omit"}
+	fieldsInOrder := [...]string{"key", "first", "after", "search", "omit", "targetType"}
 	for _, k := range fieldsInOrder {
 		v, ok := asMap[k]
 		if !ok {
@@ -28779,6 +28786,13 @@ func (ec *executionContext) unmarshalInputLabelValueSearchOptions(ctx context.Co
 				return it, err
 			}
 			it.Omit = data
+		case "targetType":
+			ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("targetType"))
+			data, err := ec.unmarshalOString2ᚖstring(ctx, v)
+			if err != nil {
+				return it, err
+			}
+			it.TargetType = data
 		}
 	}
 

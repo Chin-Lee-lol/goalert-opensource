@@ -81,6 +81,7 @@ export default function ServiceFilterContainer(
           name='label-key'
           label='Select Label Key'
           value={labelKey}
+          targetType='service'
           onChange={(labelKey: string) =>
             props.onChange({ ...props.value, labelKey })
           }
@@ -91,6 +92,7 @@ export default function ServiceFilterContainer(
           name='label-value'
           label='Select Label Value'
           labelKey={labelKey}
+          targetType='service'
           value={labelValue}
           onChange={(v: string) =>
             props.onChange({ ...props.value, labelValue: v || '' })
