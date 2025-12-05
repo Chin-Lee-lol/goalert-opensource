@@ -25,7 +25,6 @@ require (
 	github.com/jackc/pgxlisten v0.0.0-20250802141604-12b92425684c
 	github.com/jmespath/go-jmespath v0.4.0
 	github.com/joho/godotenv v1.5.1
-	github.com/lib/pq v1.10.9
 	github.com/matcornic/hermes v1.3.0
 	github.com/mnako/letters v0.2.6
 	github.com/nyaruka/phonenumbers v1.6.5
@@ -202,6 +201,7 @@ require (
 	github.com/ldez/usetesting v0.4.2 // indirect
 	github.com/leodido/go-urn v1.4.0 // indirect
 	github.com/leonklingele/grouper v1.1.2 // indirect
+	github.com/lib/pq v1.10.9 // indirect
 	github.com/lmittmann/tint v1.1.2 // indirect
 	github.com/lucasb-eyer/go-colorful v1.2.0 // indirect
 	github.com/macabu/inamedparam v0.2.0 // indirect

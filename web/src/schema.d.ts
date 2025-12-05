@@ -1413,6 +1413,7 @@ export interface User {
   email: string
   id: string
   isFavorite: boolean
+  labels: Label[]
   name: string
   notificationRules: UserNotificationRule[]
   onCallOverview: OnCallOverview
@@ -1657,6 +1658,7 @@ type ConfigID =
   | 'Slack.AccessToken'
   | 'Slack.SigningSecret'
   | 'Slack.InteractiveMessages'
+  | 'Slack.IncludeDetails'
   | 'Twilio.Enable'
   | 'Twilio.VoiceName'
   | 'Twilio.VoiceLanguage'
