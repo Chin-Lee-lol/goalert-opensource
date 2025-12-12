@@ -38,6 +38,7 @@ export default function LabelForm(props: LabelFormProps): React.JSX.Element {
                 label='Key'
                 name='key'
                 required
+                targetType='service'
                 onCreate={
                   !cfg['General.DisableLabelCreation']
                     ? (key: string) =>
